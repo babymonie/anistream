@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 var cors = require('cors');
+app.get('/',function(req,res){
+    res.send('dababy')
+})
 const {StreamEpisode,StreamEpisodeDub,StreamMovie,StreamMovieDub,DownloadEpisode,DownloadEpisodeDub,DownloadMovie,DownloadMovieDub} = require('anstrm');
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
